@@ -6,7 +6,17 @@ const withOpacityValue = (variable) => {
 const config = {
   content: ['./src/**/*.{html,js,svelte,ts,astro}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        body: 'var(--font-body)',
+        alt: 'var(--font-alt)',
+        code: 'var(--font-code)',
+        longcopy: 'var(--font-longcopy)'
+      },
+      screens: {
+        xs: '400px'
+      }
+    },
     fontSize: {
       xs: ['0.8125rem', { lineHeight: '1.5rem' }],
       sm: ['0.875rem', { lineHeight: '1.5rem' }],
